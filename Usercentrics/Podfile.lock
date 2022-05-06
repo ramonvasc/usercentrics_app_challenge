@@ -1,0 +1,20 @@
+PODS:
+  - Usercentrics (2.5.0)
+  - UsercentricsUI (2.5.0):
+    - Usercentrics (= 2.5.0)
+
+DEPENDENCIES:
+  - UsercentricsUI (= 2.5.0)
+
+SPEC REPOS:
+  trunk:
+    - Usercentrics
+    - UsercentricsUI
+
+SPEC CHECKSUMS:
+  Usercentrics: 9cb0317f1a8b3ebd6dc91ba7dd4a923a8b5d1fa1
+  UsercentricsUI: 5be0def66e57f2884d1ca8410fcaac2352e9a77e
+
+PODFILE CHECKSUM: 2d7b86d728fc245a8ad11e19486493fd081ac7ab
+
+COCOAPODS: 1.11.3

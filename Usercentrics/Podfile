@@ -1,0 +1,9 @@
+ platform :ios, '11.0'
+
+target 'Usercentrics_Challenge' do
+  use_frameworks!
+
+  # Pods for Usercentrics_Challenge
+  pod 'UsercentricsUI', '2.5.0'
+
+end

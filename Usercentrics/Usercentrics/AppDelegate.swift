@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Usercentrics
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -13,12 +14,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        self.window = UIWindow(frame: UIScreen.main.bounds)
+        // SDK Initialization
+        let options = UsercentricsOptions(settingsId: Constants.settingsID)
+        UsercentricsCore.configure(options: options)
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
 
         let consentChoiceViewController = ConsentChoiceViewController()
         
-        self.window?.rootViewController = consentChoiceViewController
-        self.window?.makeKeyAndVisible()
+        window?.rootViewController = consentChoiceViewController
+        window?.makeKeyAndVisible()
         
         return true
     }
